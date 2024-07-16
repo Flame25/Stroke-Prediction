@@ -8,5 +8,5 @@
 | Metrik evaluasi | Metric yang digunakan pada model yaitu AUC, Precision, Recall, BinaryAccuracy, TruePositive, FalsePositive, TrueNegative, FalseNegative untuk mengevaluasi performa model sebuah klasifikasi |
 | Performa model | Secara garis besar model yang dihasilkan cukup baik dengan binary_accuracy sebesar 95% dan val_binary_accuracy sebesar 95%.  |
 | Opsi deployment | Deployment dilakukan dengan menggunakan Railway yang menyediakan layanan gratis untuk me-deploy model ke cloud. |
-| Web app | [Stroke-Prediction](https://stroke-prediction-production-2b63.up.railway.app/v1/models/stroke-detection-model)|
+| Web app | [Stroke-Prediction](https://stroke-prediction.up.railway.app/v1/models/stroke-detection-model)|
 | Monitoring | Monitoring pada proyek ini dapat dilakukan dengan menggunakan layanan open-source yaitu prometheus. Contohnya setiap perubahan jumlah request yang dilakukan kepada sistem ini dapat dimonitoring dengan baik dan dapat menampilkan status dari setiap request yang diterima |
