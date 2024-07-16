@@ -1,0 +1,17 @@
+# Submission 2: Stroke Detection
+Nama: Christopher Richard Chandra
+
+Username dicoding: Crichard25
+
+| | Deskripsi |
+| ----------- | ----------- |
+| Dataset | [Stroke Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) |
+| Masalah | Belakangan ini pola hidup sehat sudah mulai menjadi hal yang populer. Hal ini dikarenakan banyak orang yang mengalami penyakit tanpa disadari karena beberapa penyakit dapat menyerang tiba tiba tanpa ada tanda - tanda yang serius dan jelas. Salah satu penyakit tersebut adalah stroke. Penyakit ini menyerang seseorang dengan pola hidup yang tidak sehat secara tiba - tiba tanda ada tanda - tanda, seperti batuk, demam, atau pun symptom penyakit umum lainnya. Stroke dapat menjadi fatal bahkan seringkali menyebabkan seseorang meninggal akibat terkena stroke. Penyakit ini sendiri terjadi karena penyumbatan pembuluh darah yang hanya bisa dideteksi apabila konsultasi ke dokter. Oleh karena itu, dibuatlah sebuah model machine learning yang dapat memprediksi seseorang akan terkena penyakit stroke atau tidak. Model ini diciptakan bukan sebagai pengganti konsultasi ke dokter, tetapi dapat menjadi survey atau indikasi awal sehingga perlu dilakukan pemeriksaan lebih lanjut ke dokter atau tenaga ahli. |
+| Solusi machine learning | Dari permasalahan diatas dengan memanfaatkan teknologi, machine learning menjadi salah satu solusi untuk membantu mengurangi tingkat kematian yang cukup tinggi akibat penyakit ini. Dengan sebuah sistem prediksi stroke, diharapkan para tenaga medis maupun masyarakat dapat terbantu untuk dapat mendeteksi penyakit ini lebih awal.|
+| Metode pengolahan | Pada projek ini Data terdapat dua tipe data yang digunakan, yaitu data kategorikal dan numerik. Metode yang digunakan untuk mengelolah data tersebut yaitu mentransformasikan data kategorikal menjadi bentuk one-hot encoding dan menormalisasikan data numerik kedalam range data yang sama sehingga machine learning dapat mengolah data dengan mudah dan hasil prediksi bisa lebih baik.|
+| Arsitektur model | Model yang dibangun cukup sederhana hanya menggunakan Dense layer dan Dropout layer sebagai hidden layer pada model neural network dan memiliki 1 output layer. Selain itu, setiap input fitur juga menjadi satu layer masing masing yang kemudian akan digabungkan dengan layer concatenate layer. |
+| Metrik evaluasi | Metric yang digunakan pada model yaitu AUC, Precision, Recall, BinaryAccuracy, TruePositive, FalsePositive, TrueNegative, FalseNegative untuk mengevaluasi performa model sebuah klasifikasi |
+| Performa model | Secara garis besar model yang dihasilkan cukup baik dengan binary_accuracy sebesar 95% dan val_binary_accuracy sebesar 95%.  |
+| Opsi deployment | Deployment dilakukan dengan menggunakan Railway yang menyediakan layanan gratis untuk me-deploy model ke cloud. |
+| Web app | [Stroke-Prediction](https://stroke-prediction-production-2b63.up.railway.app/v1/models/stroke-detection-model)|
+| Monitoring | Deksripsi terkait hasil monitoring dari model serving |

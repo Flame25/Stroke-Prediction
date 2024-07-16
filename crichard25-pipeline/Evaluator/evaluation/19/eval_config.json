@@ -1,0 +1,76 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "name": "candidate",
+        "labelKey": "stroke"
+      },
+      {
+        "name": "baseline",
+        "labelKey": "stroke",
+        "isBaseline": true
+      }
+    ],
+    "slicingSpecs": [
+      {},
+      {
+        "featureKeys": [
+          "sex"
+        ]
+      }
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "AUC"
+          },
+          {
+            "className": "Precision"
+          },
+          {
+            "className": "Recall"
+          },
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "TruePositives"
+          },
+          {
+            "className": "FalsePositives"
+          },
+          {
+            "className": "TrueNegatives"
+          },
+          {
+            "className": "FalseNegatives"
+          },
+          {
+            "className": "BinaryAccuracy",
+            "threshold": {
+              "valueThreshold": {
+                "lowerBound": 0.6
+              },
+              "changeThreshold": {
+                "absolute": 0.0001,
+                "direction": "HIGHER_IS_BETTER"
+              }
+            }
+          }
+        ],
+        "modelNames": [
+          "candidate",
+          "baseline"
+        ]
+      }
+    ]
+  },
+  "version": "0.42.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "baseline": "crichard25-pipeline/Trainer/model/8/Format-Serving",
+    "candidate": "crichard25-pipeline/Trainer/model/18/Format-Serving"
+  }
+}
